@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1.6
 before_script:
-  - 'rake db:migrate RAILS_ENV=test'
+  - bundle exec rake db:test:prepare
 script: bundle exec rake
 before_install:
   - gem update --system
