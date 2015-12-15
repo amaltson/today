@@ -1,6 +1,11 @@
 language: ruby
 rvm:
   - 2.1.6
+before_script:
+  - bundle exec rake db:test:prepare
 script: bundle exec rake
 before_install:
   - gem update --system
+addons:
+  code_climate:
+    repo_token: 96ff140c2854d56bf66f6ee98429d17ddd41df8398220b4e0cccff74a73e93ed
