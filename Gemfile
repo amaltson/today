@@ -30,10 +30,16 @@ gem 'sqlite3'
 gem 'rom', '0.9.1'
 gem 'rom-sql', '0.6.1'
 gem 'rom-rails', '0.5.0'
+
 group :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'spring-commands-rspec'
+end
+
+group :development do
+  gem 'pry', '0.10.3' # Align with ChefDK
+  gem 'rubocop', '0.34.2' # Align with ChefDK
 end
