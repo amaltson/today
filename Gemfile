@@ -37,6 +37,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'spring-commands-rspec'
+  gem 'codeclimate-test-reporter', require: nil
 end
 
 group :development do
